@@ -76,8 +76,8 @@ provider "helm" {
 
 resource "helm_release" "atj-wikijs-release" {
   name       = "atj-wikijs-release"
-  repository = "https://github.com/Requarks/wiki/tree/dev/dev/" 
-  chart      = "helm"
+  #repository = "https://github.com/Requarks/wiki/tree/dev/dev/helm/" 
+  chart      = "https://github.com/Requarks/wiki/tree/dev/dev/helm/"
 
   #values = [
   #  "${file("https://github.com/Requarks/wiki/tree/dev/dev/helm/values.yaml")}"
