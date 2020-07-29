@@ -79,7 +79,7 @@ resource "helm_release" "atj-wikijs-release" {
   repository = "https://github.com/Requarks/wiki/tree/dev/dev/helm" 
   chart      = "Chart"
 
-  values = [
-    "${file("https://github.com/Requarks/wiki/tree/dev/dev/helm/values.yaml")}"
-  ]
+  #values = [
+  #  "${file("https://github.com/Requarks/wiki/tree/dev/dev/helm/values.yaml")}"
+  #]
 }
