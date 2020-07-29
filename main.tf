@@ -80,6 +80,6 @@ resource "helm_release" "atj-wikijs-release" {
   chart      = "Chart"
 
   values = [
-    "${file("values.yaml")}"
+    "${file("https://github.com/Requarks/wiki/tree/dev/dev/helm/values.yaml")}"
   ]
 }
