@@ -76,7 +76,7 @@ provider "helm" {
 
 resource "helm_release" "atj-wikijs-release" {
   name       = "atj-wikijs-release"
-  repository = "https://github.com/Requarks/wiki/tree/dev/dev/helm" 
+  repository = "https://github.com/Requarks/wiki/tree/dev/dev/helm/" 
   chart      = "Chart"
 
   #values = [
