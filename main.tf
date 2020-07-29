@@ -63,6 +63,7 @@ data "google_client_config" "default" {
 }
 
 provider "helm" {
+  #service_account = ""
   kubernetes {
     host    = "http://34.106.92.151"
     #host                   = "${google_container_cluster.default.endpoint}"
@@ -78,7 +79,7 @@ resource "helm_release" "atj-wikijs-release" {
   repository = "https://github.com/Requarks/wiki/tree/dev/dev/helm#introduction" 
   chart      = "Chart"
 
-  values = [
-    "${file("values.yaml")}"
-  ]
+  #values = [
+  #  "${file("values.yaml")}"
+  #]
 }
